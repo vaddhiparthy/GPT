@@ -28,13 +28,20 @@ Visualize the model performance
 Each step is encapsulated in its own Python file, making the pipeline more manageable and organized:
 
 **install_libraries.py:** Installs the required libraries (Transformers, PyTorch, and Datasets).
+
 **import_modules.py:** Imports the necessary modules from Transformers, PyTorch, and Matplotlib.
+
 **load_gpt2.py:** Loads the pre-trained GPT-2 model and tokenizer.
+
 **create_dataset.py:** Creates a TextDataset from the custom text corpus and a DataCollator for language modeling.
+
 **train_test_split.py:** Splits the dataset into training and testing sets.
+
 **configure_trainer.py:** Configures the Trainer instance with training arguments and datasets.
 **train_model.py:** Trains the GPT-2 model on the training set.
+
 **evaluate_model.py:** Evaluates the model on the testing set.
+
 **visualize_performance.py:** Plots the training metrics (e.g., loss) against the training steps.
 
 ## 4. Interpreting Metrics
